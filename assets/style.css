@@ -17,7 +17,6 @@ h1 {
     color: white;
     border: solid goldenrod 3px;
     border-radius: 10px;
-   
 }
 
 .button-div {
@@ -65,4 +64,54 @@ h1 {
 
 #wins, #losses, #ties {
     color: goldenrod;
+}
+
+@media screen and (max-width: 900px) {
+    h1 {
+        font-size: 1.8em;
+    }
+    .button-div button {
+        margin: 50px 0px;
+    }
+
+    #rock-img, #paper-img, #scissors-img, #computer-pick-img {
+        width: 25%;
+    }
+    
+
+}
+
+@media screen and (max-width: 500px) {
+    
+    .scores {
+        position: relative !important;
+        margin: auto;
+        width: 50vw;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 1em;
+        margin-bottom: 15px;
+    }
+
+    .button-div {
+        margin: 15px;
+    }
+
+    .button-div button {
+        margin: auto;
+        width: 75px;
+        height: 75px;
+    }
+
+    #rock, #paper, #scissors {
+        background-size: contain; 
+    }
+
+    #rock-img, #paper-img, #scissors-img, #computer-pick-img {
+        width: 15%;
+    }
+    
+
 }

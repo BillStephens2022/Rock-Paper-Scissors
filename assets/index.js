@@ -28,17 +28,17 @@ $(resetScoresButton).click(resetScores);
 function playerSelection(event) {
     let rps = event.target;
     if (rps.id === "rock") {
-        yourPickEl.prepend('<img src="./assets/images/rock.png" alt="rock image">');
+        yourPickEl.prepend('<img src="./assets/images/rock.png" alt="rock image" id="rock-img">');
         disableButtons();
         computerSelection();
         checkResult(rps.id);
     } else if (rps.id === "paper") {
-        yourPickEl.prepend('<img src="./assets/images/paper.png" alt="paper image">');
+        yourPickEl.prepend('<img src="./assets/images/paper.png" alt="paper image" id="paper-img">');
         disableButtons();
         computerSelection();
         checkResult(rps.id);
     } else if (rps.id === "scissors") {
-        yourPickEl.prepend('<img src="./assets/images/scissors.png" alt="scissors image">');
+        yourPickEl.prepend('<img src="./assets/images/scissors.png" alt="scissors image" id="scissors-img">');
         disableButtons();
         computerSelection();
         checkResult(rps.id);
@@ -50,7 +50,7 @@ function playerSelection(event) {
 function computerSelection() {
     computerPick = rpsArray[Math.floor(Math.random() * rpsArray.length)];
     computerPickImg = `./assets/images/${computerPick}.png`;
-    computerPickEl.prepend(`<img src="${computerPickImg}" alt="${computerPick}">`);
+    computerPickEl.prepend(`<img src="${computerPickImg}" alt="${computerPick}" id="computer-pick-img">`);
 }
 
 function checkResult(yourPick) {
