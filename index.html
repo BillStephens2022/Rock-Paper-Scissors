@@ -12,13 +12,17 @@
     <header>
         <h1>ROCK 🪨, PAPER 📃, SCISSORS ✂️</h1>
     </header>
-    <h2 class="mt-4" id="instructions">Click on the Rock, Paper, or Scissors to make your selection:</h2>
-    <div class="row mt-5 justify-content-around button-div">
+    <div class="position-absolute mt-1 top-0 start-0 scores">
+        <div class="m-1"><p>Wins: <span id="wins"></span></p><p>Losses: <span id="losses"></span></p><p>Ties: </p><button class="btn btn-warning" id="scores">Reset Scores</button></div>
+    </div>
+    <h2 class="mt-3" id="instructions">Click on the Rock, Paper, or Scissors to make your selection:</h2>
+    
+    <div class="row mt-1 justify-content-around button-div">
         <button id="rock">Rock</button>
         <button id="paper">Paper</button>
         <button id="scissors">Scissors</button>
     </div>
-    <div class="row mt-5 justify-content-around game">
+    <div class="row mt-2 justify-content-around game">
         <div class="col-md-6">
             <h2>You:</h2>
             <p id="your-pick"></p>
@@ -27,10 +31,14 @@
             <h2>Computer:</h2>
             <p id="computer-pick"></p>
         </div>
-       
     </div>
-    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <div class="row mt-2 text-center end-game">
+        <h1 class="text-center" id="win-loss-message"></h1>
+        <button class="btn btn-primary text-center" id="play-again">Click to play again</button>
+    </div>
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
     <script src="./assets/index.js"></script>
 </body>
 </html>

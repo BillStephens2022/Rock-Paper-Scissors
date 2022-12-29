@@ -13,6 +13,13 @@ h1 {
     text-align: center;
 }
 
+.scores {
+    color: white;
+    border: solid goldenrod 3px;
+    border-radius: 10px;
+   
+}
+
 .button-div {
     text-align: center;
 }
@@ -47,4 +54,11 @@ h1 {
 #scissors {
     background-image: url('./images/scissors.png');
     background-size: contain;
+}
+
+#play-again {
+    visibility: hidden;
+    color: white;
+    width: 150px;
+    margin: auto;
 }
