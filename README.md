@@ -4,6 +4,10 @@
 
   Rock, Paper, Scissors game. Player makes selections by clicking on their choice and results are rendered onto the page. Scores are tracked using local storage.  Utilized HTML, Bootstrap CSS, CSS, JavaScript, jQuery.
   
+  Screenshot:
+  
+  ![Screen Shot 2022-12-29 at 4 00 25 PM](https://user-images.githubusercontent.com/113722447/210015007-78a2e540-ce61-4857-8106-fd33675a416f.png)
+  
   ## Table of Contents
   
   - [Installation](#installation)
