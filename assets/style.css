@@ -70,6 +70,11 @@ h1 {
     h1 {
         font-size: 1.8em;
     }
+
+    .button-div {
+        margin-top: 50px !important;
+    }
+
     .button-div button {
         margin: 50px 0px;
     }
@@ -77,8 +82,6 @@ h1 {
     #rock-img, #paper-img, #scissors-img, #computer-pick-img {
         width: 25%;
     }
-    
-
 }
 
 @media screen and (max-width: 500px) {
@@ -86,8 +89,17 @@ h1 {
     .scores {
         position: relative !important;
         margin: auto;
-        width: 50vw;
+        max-width: 45vw;
+        max-height: 30vh;
         text-align: center;
+        line-height: 0.5em;
+        padding: 5px;
+    }
+
+    .scores button {
+        height: 50px;
+        width: 75px;
+        font-size: .75em;
     }
 
     h1 {
@@ -96,7 +108,7 @@ h1 {
     }
 
     .button-div {
-        margin: 15px;
+        margin: 20px !important;
     }
 
     .button-div button {
@@ -112,6 +124,4 @@ h1 {
     #rock-img, #paper-img, #scissors-img, #computer-pick-img {
         width: 15%;
     }
-    
-
 }
