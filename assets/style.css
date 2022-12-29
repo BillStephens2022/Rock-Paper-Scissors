@@ -62,3 +62,7 @@ h1 {
     width: 150px;
     margin: auto;
 }
+
+#wins, #losses, #ties {
+    color: goldenrod;
+}
