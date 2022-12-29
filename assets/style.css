@@ -8,6 +8,11 @@ h1 {
     color: white;
 }
 
+#instructions {
+    color: white;
+    text-align: center;
+}
+
 .button-div {
     text-align: center;
 }
