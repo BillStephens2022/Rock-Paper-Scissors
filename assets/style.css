@@ -1,0 +1,45 @@
+body { 
+    background-color: black;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 50px;
+    color: white;
+}
+
+.button-div {
+    text-align: center;
+}
+
+.button-div button {
+    width: 100px;
+    height: 100px;
+    margin: 100px;
+    border-radius: 10px;
+    border: solid white 3px;
+}
+
+.game {
+    text-align: center;
+    color: white;
+}
+
+#your-pick {
+    color: white;
+}
+
+#rock {
+    background-image: url('./images/rock.png');
+    background-size: contain;
+}
+
+#paper {
+    background-image: url('./images/paper.png');
+    background-size: contain;
+}
+
+#scissors {
+    background-image: url('./images/scissors.png');
+    background-size: contain;
+}
