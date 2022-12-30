@@ -1,16 +1,25 @@
+
 body { 
     background-color: black;
 }
 
-h1 {
+header {
+    height: 180px;
+    margin: -50px;
+    background-image: linear-gradient(45deg, black 0%, gray 52%, white 90%);
+}
+
+#title {
     text-align: center;
     margin-top: 50px;
     color: white;
+    padding-top: 65px;
 }
 
 #instructions {
     color: white;
     text-align: center;
+    padding-top: 50px;
 }
 
 .scores {
@@ -26,7 +35,7 @@ h1 {
 .button-div button {
     width: 100px;
     height: 100px;
-    margin: 100px;
+    margin: 50px;
     border-radius: 10px;
     border: solid white 3px;
 }
@@ -55,10 +64,15 @@ h1 {
     background-size: contain;
 }
 
+#rock-img, #paper-img, #scissors-img, #computer-pick-img {
+    width: 15%;
+}
+
 #play-again {
     visibility: hidden;
     color: white;
     width: 150px;
+    height: 75px;
     margin: auto;
 }
 
@@ -67,7 +81,7 @@ h1 {
 }
 
 @media screen and (max-width: 900px) {
-    h1 {
+    #title {
         font-size: 1.8em;
     }
 
@@ -80,16 +94,34 @@ h1 {
     }
 
     #rock-img, #paper-img, #scissors-img, #computer-pick-img {
-        width: 25%;
+        width: 30%;
+    }
+
+    #play-again {
+        height: 50px;
+        font-size: 1em;
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
+
+    header {
+        height: 125px;
+        margin-bottom: 15px
+    }
+
+    #title {
+        margin-top: 25px;
+    }
+
+    #instructions {
+        padding-top: 5px;
+    }
     
     .scores {
         position: relative !important;
         margin: auto;
-        max-width: 45vw;
+        max-width: 40vw;
         max-height: 30vh;
         text-align: center;
         line-height: 0.5em;
@@ -102,8 +134,8 @@ h1 {
         font-size: .75em;
     }
 
-    h1 {
-        font-size: 1em;
+    #title {
+        font-size: 1.25em;
         margin-bottom: 15px;
     }
 
@@ -113,8 +145,8 @@ h1 {
 
     .button-div button {
         margin: auto;
-        width: 75px;
-        height: 75px;
+        width: 60px;
+        height: 60px;
     }
 
     #rock, #paper, #scissors {
@@ -122,6 +154,36 @@ h1 {
     }
 
     #rock-img, #paper-img, #scissors-img, #computer-pick-img {
-        width: 15%;
+        width: 35%;
+    }
+
+    #win-loss-message {
+        font-size: 1em;
+        margin-bottom: 15px;
+    }
+
+    #play-again {
+        width: 100px;
+        height: 75px;
+        box-shadow: white 1px 1px 3px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+
+    header {
+        margin-bottom: 15px;
+    }
+
+    #title {
+        font-size: 1em;
+    }
+
+    #rock-img, #paper-img, #scissors-img, #computer-pick-img {
+        width: 35%;
+    }
+
+    #play-again {
+        height: 60px;
     }
 }
